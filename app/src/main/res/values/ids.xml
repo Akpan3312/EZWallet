@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_container_view" type="id">fragment view</item>
+    <item name="recent_activity_description" type="id">recent_activity_description</item>
+    <item name="recent_activity_name" type="id">recent_activity_name</item>
+    <item name="recent_activity_image" type="id">recent_activity_image</item>
+    <item name="recent_activity_amount" type="id">recent_activity_amount</item>
+</resources>

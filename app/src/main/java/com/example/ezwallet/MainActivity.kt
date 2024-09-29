@@ -8,17 +8,11 @@ import androidx.fragment.app.Fragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_profile)
-        if (savedInstanceState==null){
-            LoadFragment(profileFragment())
-        }
-    }
-    private fun LoadFragment(fragment: Fragment){
-        supportFragmentManager.beginTransaction().replace(androidx.fragment.R.id.fragment_container,fragment)
-            .commit()
-    }
+        setContentView(R.layout.activity_main)
 
-    class LoadFragment(profileFragment: profileFragment) {
 
+        var fragmentTransaction =supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container_view, ProfileFragment())
+        fragmentTransaction.addToBackStack(null).commit()
     }
 }
